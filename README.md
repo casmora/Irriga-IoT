@@ -15,6 +15,10 @@ O sistema tem o propósito de monitorar temperaturas do ambiente e atuar caso ne
 + Plataforma HiveMQ - (Broker Nuvem) -> Gerencia o envio das mensagens para os tópicos
 + MQTT DashBoard - (Aplicativo Android) -> Visualização dos Dados e acionamento da válvula
 
+## Bibliotecas:
++ 
+
+
   
 
 
