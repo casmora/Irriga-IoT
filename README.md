@@ -1,2 +1,3 @@
 # Irriga-IoT
-Protótipo baseado em IoT aplicado em Mini Hortas Urbanas
+Protótipo Baseado em IoT Aplicado em Mini Hortas Urbanas
+
