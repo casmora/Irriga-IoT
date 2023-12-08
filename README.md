@@ -24,7 +24,19 @@ O sistema tem o propósito de monitorar temperaturas do ambiente e atuar caso ne
 + **WebServer.h** -> Facilita na criação de um servidor web no ESP32
 
 ## Ajustes na Área de Trabalho.
-Verifique se a IDE Arduino está reconhecendo a sua placa na aba ferramentas > Gerenciador de placas. Após instalar as bibliotecas usando o gerenciador de bibliotecas.Carregue o código fonte em seu microcontrolador.
+Verifique se a IDE Arduino está reconhecendo a sua placa na aba ferramentas > Gerenciador de placas. Após instalar as bibliotecas usando o gerenciador de bibliotecas. Carregue o código fonte em seu microcontrolador.
+
+# Ajustando o Broker
+Após criação de conta no broker Hivemq é disponibilizado um cluster free. Entre no gerenciador de conta e atente-se as  configurações de conexão, essa, informa a porta disponibilizada e a url de acesso. Obs: a URL e porta deverão ser inseridas no código fonte para conexão entre a placa e o ESP. Crie uma credencial de acesso na aba "Access Management" e em seguida crie tópicos para serem alimentados na aba web cliente.
+
+
+
+
+
+
+
+
+Se for replicar o código fielmente, consulte os pinos utilizados no código e faça a conexão com os conectores dos sensores. O pino usado no sensor de umidade do solo é o Analógico
 
 
 
