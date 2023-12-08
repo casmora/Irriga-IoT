@@ -35,16 +35,12 @@ OBS: nesse sistema foram criados 5 tópicos
 + UmidadeSolo
 + Sensor Temperatura
 ## Ajustando o Dashboard
-Baixe o App 
+Baixe o App MqttDashboard no Google play. 
+OBS 2: No gerenciador de Servidores, nomeie seu servidore em seguida, insira a url fornecida pelo Hivemq e atente-se colocando as siglas "ssl://" antes da url. Logo,  insira a porta 8883, escolha a opção servidor protegido e insira usuario e senha do broker (mesmo utilizado na aba WEB cliente do HiveMQ).
+Marque a opção de usar SSL e insira a sua senha novamente do broker para se conectar. Configure o dashboard com icones de sua escolha escolhendo entre publicador ou assinate.
 
 
 
-
-
-
-
-
-Se for replicar o código fielmente, consulte os pinos utilizados no código e faça a conexão com os conectores dos sensores. O pino usado no sensor de umidade do solo é o Analógico
 
 
 
