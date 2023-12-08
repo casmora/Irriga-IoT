@@ -23,6 +23,9 @@ O sistema tem o propósito de monitorar temperaturas do ambiente e atuar caso ne
 + **ArduinoJson.h** -> Permite que você analise e gere (serialize) dados JSON de maneira eficiente em ambientes com recursos limitados
 + **WebServer.h** -> Facilita na criação de um servidor web no ESP32
 
+## Ajustando sua Área de Trabalho.
+Verifique se a IDE Arduino está reconhecendo a sua placa na aba ferramentas > Gerenciador de placas. Após instalar as bibliotecas usando o gerenciador de bibliotecas.Carregue o código fonte em seu microcontrolador.
+
 
 
 
