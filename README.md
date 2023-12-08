@@ -21,6 +21,7 @@ O sistema tem o propósito de monitorar temperaturas do ambiente e atuar caso ne
 + **DHTesp.h** -> Utilizado para facilitar o uso dos sensores DHT
 + **WiFiClientSecure.h** -> Permite estabelecer conexões seguras
 + **ArduinoJson.h** -> Permite que você analise e gere (serialize) dados JSON de maneira eficiente em ambientes com recursos limitados
++ **WebServer.h** -> Facilita na criação de um servidor web no ESP32
 
 
 
