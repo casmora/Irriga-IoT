@@ -7,11 +7,11 @@
 #include <WebServer.h>
 
 
-/**** DHT11 sensor Settings *******/
+/**** DHT11 sensor Configurações *******/
 #define DHTpin 15   //Set DHT pin as GPI15
 DHTesp dht;
 
-/****** UmidadeDoSolu*******/
+/****** UmidadeDoSolo*******/
 #define SoilMoisturePin A4  // setando pin GPi32 = A4
 //int soilMoisture = 0; // Variável global para armazenar a leitura da umidade do solo
 
@@ -80,7 +80,7 @@ emyPxgcYxn/eR44/KJ4EBs+lVDR3veyJm+kXQ99b21/+jh5Xos1AnX5iItreGCc=
 -----END CERTIFICATE-----
 )EOF";
 
-/************* Connect to WiFi ***********/
+/************* Conexões  WiFi ***********/
 void setup_wifi() {
   delay(10);
   Serial.print("\nConnecting to ");
@@ -97,7 +97,7 @@ void setup_wifi() {
   Serial.println("\nWiFi connected\nIP address: ");
   Serial.println(WiFi.localIP());
 }
-/************* Connect to MQTT Broker ***********/
+/************* Conexão Broker MQTT ***********/
 void reconnect() {
   // Loop until we're reconnected
   while (!client.connected()) {
@@ -118,7 +118,7 @@ void reconnect() {
     }
   } 
 }
-/***** Call back Method for Receiving MQTT messages and Switching LED (RELÉ)****/
+/*****  Método de retorno de chamada para receber mensagens MQTT e alternar LED (RELÉ)****/
 
 void callback(char* topic, byte* payload, unsigned int length) {
   String incommingMessage = "";
@@ -126,19 +126,19 @@ void callback(char* topic, byte* payload, unsigned int length) {
 
   Serial.println("Message arrived ["+String(topic)+"]"+incommingMessage);
 
-  //--- check the incomming message
+  //--- Verificar MSG recebida
     if( strcmp(topic,"LIGAR/DESLIGAR") == 0){
      if (incommingMessage.equals("1")) digitalWrite(led, HIGH);   // Turn the LED on
      else digitalWrite(led, LOW);  // Turn the LED off
   }
 
 }
-/**** Method for Publishing MQTT Messages **********/
+/**** Método para publicar msg **********/
 void publishMessage(const char* topic, String payload , boolean retained){
   if (client.publish(topic, payload.c_str(), true))
       Serial.println("Message publised ["+String(topic)+"]: "+payload);
 }
-/**** Application Initialisation Function******/
+/**** Application Initialisation Function Função de inicialização******/
 void setup() {
 
   dht.setup(DHTpin, DHTesp::DHT11); //Set up DHT11 sensor
@@ -159,10 +159,11 @@ void setup() {
 /******** Main Function *************/
 void loop() {
 
-  if (!client.connected()) reconnect(); // check if client is connected
+  if (!client.connected()) reconnect(); // verifique se o cliente está conectado
   client.loop();
 
-//read DHT11 temperature and humidity reading
+// leitura de temperatura e umidade DHT11 - read DHT11 temperature and humidity reading
+ 
   delay(dht.getMinimumSamplingPeriod());
   
   float humidity = dht.getHumidity();
