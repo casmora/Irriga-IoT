@@ -34,12 +34,19 @@ OBS: nesse sistema foram criados 5 tópicos
 + UmidadeAR
 + UmidadeSolo
 + Sensor Temperatura
+
 ## Ajustando o Dashboard
 Baixe o App MqttDashboard no Google play. 
-OBS 2: No gerenciador de Servidores, nomeie seu servidore em seguida, insira a url fornecida pelo Hivemq e atente-se colocando as siglas "ssl://" antes da url. Logo,  insira a porta 8883, escolha a opção servidor protegido e insira usuario e senha do broker (mesmo utilizado na aba WEB cliente do HiveMQ).
+OBS 2: No gerenciador de Servidores, nomeie seu servidor e em seguida, insira a url fornecida pelo Hivemq e atente-se colocando as siglas "ssl://" antes da url. Logo,  insira a porta 8883, escolha a opção servidor protegido e insira usuario e senha do broker (mesmo utilizado na aba WEB cliente do HiveMQ).
 Marque a opção de usar SSL e insira a sua senha novamente do broker para se conectar. Configure o dashboard com icones de sua escolha escolhendo entre publicador ou assinate.
 
+## Base do Projeto
+O projeto utilizou como base do código o tutorial disponível no site do HiveMQ com o título "Getting Started with MQTT on Arduino Using NodeMCU ESP8266"
 
+## Licença
+Este projeto é distribuído sob a licença [GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007]. Consulte o arquivo LICENSE para obter mais detalhes.
+
+##  Antonio Castano Moraes - 2023
 
 
 
