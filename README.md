@@ -41,7 +41,7 @@ OBS 2: No gerenciador de Servidores, nomeie seu servidor e em seguida, insira a 
 Marque a opção de usar SSL e insira a sua senha novamente do broker para se conectar. Configure o dashboard com icones de sua escolha escolhendo entre publicador ou assinate.
 
 ## Base do Projeto
-O projeto utilizou como base do código o tutorial disponível no site do HiveMQ com o título "Getting Started with MQTT on Arduino Using NodeMCU ESP8266"
+O projeto utilizou como alicerce o tutorial disponível no site do HiveMQ com o título "Getting Started with MQTT on Arduino Using NodeMCU ESP8266"
 
 ## Licença
 Este projeto é distribuído sob a licença [GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007]. Consulte o arquivo LICENSE para obter mais detalhes.
