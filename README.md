@@ -11,7 +11,8 @@ O sistema tem o propósito de monitorar temperaturas do ambiente e atuar caso ne
 + Módulo ReLê 1 canal 3V
 + válvula Solenoide 12V
 
-<img src="/montagem1.jpg>
+<img src="/montagem1.jpg">
+<img src="/assets/img/arquivo.gif">
 
 ## Software Usado 
 + Plataforma HiveMQ - (Broker Nuvem) -> Gerencia o envio das mensagens para os tópicos
