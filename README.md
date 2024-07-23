@@ -2,7 +2,8 @@
 **| ESP32 | MQTT | HiveMQ | MQTTDashBoard |**
 
 ## Protótipo Baseado em IoT Aplicado em Mini Hortas Urbanas
-O sistema tem o propósito de monitorar temperaturas do ambiente (AR/SOLO) atuando caso necessário, ativando a irrigação remotamente. 
+O sistema tem o propósito de monitorar temperaturas do ambiente (AR/SOLO) e controlar atuando caso necessário ativando a irrigação remotamente por intermédio do celular, especificamente através do aplicativo mqttDashboard (foto 3).
+Obs: em caso de urgência poderá ser controlado e monitorado diretamente via Broker Hivemq na aba web client.
 
 ## Hardware Usados no Sistema
 + ESP 32 - DEVKIT
@@ -12,7 +13,11 @@ O sistema tem o propósito de monitorar temperaturas do ambiente (AR/SOLO) atuan
 + válvula Solenoide 12V
 
 <img src="/montagem1.jpg">
-<img src="/assets/img/arquivo.gif">
+<img src="/fotoFrente_Irrig.jpg" alt="Foto da frente" width="600px" style="height: auto;" />
+<img src="/Foto_front_app_Mqttdash.jpg" alt="tela aplicativo" width="600px" style="height: auto;" />
+<img src="/foto_atrás.jpg" alt="tela aplicativo" width="600px" style="height: auto;" />
+
+PROJETO DE SISTEMAS EMBARCADOS<img src="/assets/img/arquivo.gif">
 
 ## Software Usado 
 + Plataforma HiveMQ - (Broker Nuvem) -> Gerencia o envio das mensagens para os tópicos
